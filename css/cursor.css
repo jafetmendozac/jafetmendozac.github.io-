@@ -1,0 +1,29 @@
+#cursor {
+  position: fixed; width: 10px; height: 10px; background: var(--blue);
+  border-radius: 50%; pointer-events: none; z-index: 9999;
+  transform: translate(-50%,-50%); mix-blend-mode: multiply;
+  transition: width .2s, height .2s, background .2s;
+  transform-origin: center;
+}
+#cursor-ring {
+  position: fixed; width: 36px; height: 36px;
+  border: 1.5px solid var(--blue); border-radius: 50%;
+  pointer-events: none; z-index: 9998; transform: translate(-50%,-50%); opacity: .4;
+  transition: width .25s, height .25s, border-color .2s;
+}
+#cursor-label {
+  position: fixed; pointer-events: none; z-index: 9997;
+  font-size: .68rem; font-weight: 500; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--blue); opacity: 0; transform: translate(-50%, 22px);
+  transition: opacity .2s; white-space: nowrap;
+}
+body.c-hover #cursor { width: 18px; height: 18px; background: var(--teal); }
+body.c-hover #cursor-ring { width: 54px; height: 54px; border-color: var(--teal); }
+body.c-proj #cursor { width: 58px; height: 58px; background: var(--blue); opacity: .1; }
+body.c-proj #cursor-ring { width: 58px; height: 58px; border-color: transparent; }
+body.c-proj #cursor-label { opacity: 1; }
+
+#progress {
+  position: fixed; top: 0; left: 0; height: 2px; background: var(--blue);
+  z-index: 200; transform-origin: left; transform: scaleX(0);
+}

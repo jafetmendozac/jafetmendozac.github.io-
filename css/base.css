@@ -1,0 +1,23 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #F4F6F9;
+  --ink: #111827;
+  --ink-muted: #6B7280;
+  --blue: #2563EB;
+  --blue-light: #EFF6FF;
+  --blue-mid: #BFDBFE;
+  --teal: #0D9488;
+  --teal-light: #F0FDFA;
+  --amber: #D97706;
+  --amber-light: #FFFBEB;
+  --green: #16A34A;
+  --green-light: #F0FDF4;
+  --card-bg: #FFFFFF;
+  --border: rgba(17,24,39,0.09);
+}
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 1.6;
+  cursor: none; overflow-x: hidden;
+}

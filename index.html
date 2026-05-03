@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abraham Mendoza — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="page-overlay"></div>
+<div id="progress"></div>
+
+<div id="loader">
+  <div id="loader-name">
+    <span>A</span><span>M</span>
+  </div>
+  <div id="loader-bar-wrap"><div id="loader-bar"></div></div>
+  <div id="loader-pct">0%</div>
+</div>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<div id="cursor-label">Ver caso →</div>
+
+<nav id="navbar">
+  <a href="#hero" class="nav-logo magnetic">AM —</a>
+  <ul class="nav-links">
+    <li><a href="#about">Sobre mí</a></li>
+    <li><a href="#experience">Experiencia</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#testimonials">Referencias</a></li>
+  </ul>
+  <a href="mailto:abrahamjoelmc@gmail.com" class="nav-cta magnetic">Contactar</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile-menu" id="mobileMenu">
+  <button class="menu-close-btn" id="menuCloseBtn"><span class="close-x">✕</span></button>
+  <div class="menu-top">
+    <span class="menu-nav-label">Navegación</span>
+    <div class="menu-divider"></div>
+    <nav class="menu-links">
+      <a href="#about" class="menu-link">Sobre mí <span class="menu-link-arrow">↗</span></a>
+      <a href="#experience" class="menu-link">Experiencia <span class="menu-link-arrow">↗</span></a>
+      <a href="#projects" class="menu-link">Proyectos <span class="menu-link-arrow">↗</span></a>
+      <a href="#skills" class="menu-link">Skills <span class="menu-link-arrow">↗</span></a>
+      <a href="#contact" class="menu-link">Contacto <span class="menu-link-arrow">↗</span></a>
+    </nav>
+  </div>
+  <div class="menu-bottom">
+    <div class="menu-divider-bottom"></div>
+    <span class="menu-social-label">Socials</span>
+    <div class="menu-social">
+      <a href="https://github.com/jafetmendozac" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/abraham-mendoza-59890b345/" target="_blank">LinkedIn</a>
+      <a href="mailto:abrahamjoelmc@gmail.com">Email</a>
+    </div>
+  </div>
+</div>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text" id="bgText">BUILD</div>
+  <div class="hero-available" id="heroAvail">Disponible para proyectos freelance</div>
+  <h1 class="hero-title" id="heroTitle">
+    <span class="line"><span class="word">Desarrollo</span> <span class="word">web</span></span>
+    <span class="line"><span class="word">que</span> <span class="accent"><span class="word">funciona</span></span></span>
+    <span class="line"><span class="word">en</span> <span class="word">producción.</span></span>
+  </h1>
+  <div class="hero-bottom" id="heroBottom">
+    <p class="hero-desc">
+      Hola, soy <strong>Abraham Mendoza</strong> — Full Stack Developer.<br>
+      Construyo aplicaciones web rápidas, mantenibles y listas para crecer.<br>
+      React · Next.js · Node.js · TypeScript
+    </p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="2">0</span>
+        <span class="hero-stat-label">Empresas en producción</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num" data-count="2">0</span>
+        <span class="hero-stat-label">Año de experiencia real</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item">React <span class="mdot"></span></div>
+    <div class="marquee-item">Next.js <span class="mdot"></span></div>
+    <div class="marquee-item">TypeScript <span class="mdot"></span></div>
+    <div class="marquee-item">Node.js <span class="mdot"></span></div>
+    <div class="marquee-item">Firebase <span class="mdot"></span></div>
+    <div class="marquee-item">APIs REST <span class="mdot"></span></div>
+    <div class="marquee-item">MongoDB <span class="mdot"></span></div>
+    <div class="marquee-item">Supabase <span class="mdot"></span></div>
+    <div class="marquee-item">React <span class="mdot"></span></div>
+    <div class="marquee-item">Next.js <span class="mdot"></span></div>
+    <div class="marquee-item">TypeScript <span class="mdot"></span></div>
+    <div class="marquee-item">Node.js <span class="mdot"></span></div>
+    <div class="marquee-item">Firebase <span class="mdot"></span></div>
+    <div class="marquee-item">APIs REST <span class="mdot"></span></div>
+    <div class="marquee-item">MongoDB <span class="mdot"></span></div>
+    <div class="marquee-item">Supabase <span class="mdot"></span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-big-num" id="aboutNum">01</div>
+  <div class="about-sticky">
+    <p class="section-label">Sobre mí</p>
+    <h2 class="about-heading">Código con<br><span class="accent">propósito.</span></h2>
+  </div>
+  <div id="aboutContent">
+    <p class="about-text">
+      Soy Abraham, desarrollador Full Stack con experiencia real trabajando en
+      <strong>sistemas empresariales en producción</strong> — no solo proyectos de práctica.
+    </p>
+    <p class="about-text">
+      He construido y migrado plataformas para empresas peruanas, implementado APIs que
+      conectan equipos enteros y entregado funcionalidades que resuelven <strong>problemas concretos del día a día.</strong>
+    </p>
+    <p class="about-text">
+      Lo que me diferencia no es solo el stack tecnológico — es que entiendo que detrás de
+      cada línea de código hay un negocio que necesita resultados. Por eso trabajo rápido,
+      comunico claro y <strong>no desaparezco cuando algo falla en producción.</strong>
+    </p>
+    <div class="about-diff">
+      <p>"Si tienes una idea, un sistema que mejorar o un proyecto que no ha podido arrancar — conversemos."</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <p class="section-label">Experiencia</p>
+  <h2 class="exp-heading">
+    <span class="line">Resultados reales</span>
+    <span class="line"><span class="accent">en producción.</span></span>
+  </h2>
+  <div class="exp-list">
+    <div class="exp-card" data-reveal>
+      <div class="exp-meta">
+        <span class="exp-badge badge-current">Actual</span>
+        <span class="exp-period">Junio 2025 – Actualidad</span>
+      </div>
+      <h3 class="exp-role">Full Stack Developer</h3>
+      <p class="exp-company">SISEG Smart Solutions S.A.C. · Part-time</p>
+      <div class="exp-results">
+        <p class="exp-result">Construyo aplicaciones web full stack desde cero en un entorno ágil y de ritmo rápido.</p>
+        <p class="exp-result">Implementé autenticación y gestión de datos con Firebase para aplicaciones con usuarios reales.</p>
+        <p class="exp-result">Integré frontend con servicios backend garantizando flujos de datos consistentes y seguros.</p>
+        <p class="exp-result">Contribuyo activamente a mejora continua del producto con entregas constantes en producción.</p>
+      </div>
+    </div>
+    <div class="exp-card" data-reveal>
+      <div class="exp-meta">
+        <span class="exp-badge badge-past">Completado</span>
+        <span class="exp-period">Marzo 2024 – Setiembre 2025</span>
+      </div>
+      <h3 class="exp-role">Full Stack Developer</h3>
+      <p class="exp-company">Corporación Alianza Logística Integral S.A.C. · Part-time</p>
+      <div class="exp-results">
+        <p class="exp-result">Migré el sistema principal a Next.js, reduciendo tiempos de carga y mejorando la mantenibilidad a largo plazo.</p>
+        <p class="exp-result">Diseñé e implementé APIs REST que conectaron el frontend con el backend de forma estable y escalable.</p>
+        <p class="exp-result">Resolví incidencias críticas en producción, minimizando el tiempo de inactividad del sistema.</p>
+        <p class="exp-result">Implementé nuevas funcionalidades clave para el equipo operativo de la empresa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">Proyectos</p>
+  <h2 class="proj-heading">
+    <span class="line">Lo que he</span>
+    <span class="line"><span class="accent">construido.</span></span>
+  </h2>
+  <div class="proj-grid">
+    <a class="proj-card proj-card-blue" href="#" data-project>
+      <span class="proj-arrow">↗</span>
+      <div class="proj-card-header">
+        <div class="proj-icon proj-icon-blue">🚀</div>
+        <span class="proj-status s-live">En producción</span>
+      </div>
+      <h3 class="proj-name">Sistema Web Empresarial — Alianza Logística</h3>
+      <p class="proj-desc">Plataforma interna usada por el equipo operativo de la empresa. Migré la arquitectura completa a Next.js y rediseñé los flujos principales para mejorar la eficiencia del equipo.</p>
+      <div class="proj-impact"><span>Impacto:</span> Reducción de tiempos de carga, arquitectura más mantenible y flujos operativos más eficientes para el equipo.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">React</span>
+        <span class="proj-tag">Next.js</span>
+        <span class="proj-tag">Node.js</span>
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">APIs REST</span>
+      </div>
+    </a>
+
+    <a class="proj-card proj-card-teal" href="#" data-project>
+      <span class="proj-arrow">↗</span>
+      <div class="proj-card-header">
+        <div class="proj-icon proj-icon-teal">⚙️</div>
+        <span class="proj-status s-live">En producción</span>
+      </div>
+      <h3 class="proj-name">App Full Stack — SISEG Smart Solutions</h3>
+      <p class="proj-desc">Aplicación web con autenticación completa, persistencia de datos en tiempo real y flujos integrados entre frontend y servicios backend. Desarrollada en ciclos ágiles con entregas continuas.</p>
+      <div class="proj-impact"><span>Impacto:</span> Sistema funcional con usuarios reales, entrega iterativa y mejoras continuas en cada sprint.</div>
+      <div class="proj-tags">
+        <span class="proj-tag">React</span>
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">Firebase</span>
+        <span class="proj-tag">Supabase</span>
+      </div>
+    </a>
+
+    <a class="proj-card proj-card-amber" href="#" data-project style="grid-column: 1 / -1;">
+      <span class="proj-arrow">↗</span>
+      <div class="proj-card-header">
+        <div class="proj-icon proj-icon-amber">💡</div>
+        <span class="proj-status s-wip">En desarrollo</span>
+      </div>
+      <h3 class="proj-name">Próximamente — Proyecto personal</h3>
+      <p class="proj-desc">Actualmente trabajando en mi primer producto propio para el mercado peruano. Más detalles próximamente. Si tienes una idea o un problema que resolver, podemos construirlo juntos.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Next.js 15</span>
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">Supabase</span>
+        <span class="proj-tag">TBD</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">Skills</p>
+  <h2 class="skills-heading">Herramientas al<br>servicio de tu negocio.</h2>
+  <p class="skills-sub">No solo domino el stack — sé cuándo usar cada herramienta para que tu proyecto <em>no se convierta en una deuda técnica.</em></p>
+  <div class="skills-grid">
+    <div class="skill-group" data-tilt>
+      <div class="skill-group-top">
+        <span class="skill-group-icon">🖥️</span>
+        <span class="skill-group-name">Interfaces modernas</span>
+      </div>
+      <p class="skill-benefit">Construyo UIs rápidas, responsivas y fáciles de mantener.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">JavaScript ES6+</span>
+      </div>
+    </div>
+    <div class="skill-group" data-tilt>
+      <div class="skill-group-top">
+        <span class="skill-group-icon">⚡</span>
+        <span class="skill-group-name">Backends escalables</span>
+      </div>
+      <p class="skill-benefit">APIs REST robustas que conectan tu frontend con tu negocio.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">APIs REST</span>
+        <span class="skill-tag">TypeScript</span>
+      </div>
+    </div>
+    <div class="skill-group" data-tilt>
+      <div class="skill-group-top">
+        <span class="skill-group-icon">🗄️</span>
+        <span class="skill-group-name">Datos y persistencia</span>
+      </div>
+      <p class="skill-benefit">Tu información segura, organizada y accesible cuando la necesitas.</p>
+      <div class="skill-tags">
+        <span class="skill-tag">Firebase</span>
+        <span class="skill-tag">Supabase</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">SQL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <p class="section-label center">Referencias</p>
+  <h2 class="test-heading">Lo que dicen<br>quienes han trabajado conmigo.</h2>
+  <div class="test-grid">
+    <div class="test-card" data-reveal>
+      <span class="test-quote">"</span>
+      <p class="test-text">Entregó la migración a Next.js en tiempo y forma, con documentación clara y sin romper nada en producción. <strong>El sistema quedó más rápido, más limpio y mucho más fácil de mantener.</strong> Recomendado sin dudar.</p>
+      <div class="test-author">
+        <div class="test-avatar av-amber">CP</div>
+        <div>
+          <p class="test-name">William V.</p>
+          <p class="test-role">QA · Alianza Logística Integral</p>
+        </div>
+      </div>
+    </div>
+    <div class="test-card" data-reveal>
+      <span class="test-quote">"</span>
+      <p class="test-text">Abraham demostró una capacidad de adaptación impresionante desde el primer día. Tomó sistemas complejos, los entendió rápido y entregó mejoras concretas en producción. <strong>No desaparece cuando hay un problema — lo resuelve.</strong></p>
+      <div class="test-author">
+        <div class="test-avatar av-blue">RL</div>
+        <div>
+          <p class="test-name">Carina L.</p>
+          <p class="test-role">Soporte TI · Alianza Logística Integral</p>
+        </div>
+      </div>
+    </div>
+    <div class="test-card" data-reveal>
+      <span class="test-quote">"</span>
+      <p class="test-text">Lo que más valoro de trabajar con Abraham es que piensa más allá del código. Propone soluciones, avisa cuando algo puede fallar y <strong>comunica claro en cada etapa del proyecto.</strong> Eso es difícil de encontrar.</p>
+      <div class="test-author">
+        <div class="test-avatar av-teal">MV</div>
+        <div>
+          <p class="test-name">Caleb J.</p>
+          <p class="test-role">Product Manager · SISEG Smart Solutions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-orb"></div>
+  <p class="section-label center">Contacto</p>
+  <h2 class="contact-heading" id="contactHeading">¿Empezamos<br><span class="accent">a construir?</span></h2>
+  <p class="contact-sub" id="contactSub">Cuéntame qué necesitas — sin compromiso.</p>
+  <p class="contact-promise">⚡ Te respondo en menos de 24 horas</p>
+  <div class="contact-links" id="contactLinks">
+    <a href="mailto:abrahamjoelmc@gmail.com" class="contact-btn btn-primary magnetic">
+      <span>✉ Escribirme ahora</span>
+    </a>
+    <a href="https://www.linkedin.com/in/abraham-mendoza-59890b345/" target="_blank" class="contact-btn btn-secondary magnetic">
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/jafetmendozac" target="_blank" class="contact-btn btn-secondary magnetic">
+      <span>GitHub</span>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <span>© 2025 <strong>Abraham Mendoza</strong> — Trujillo, Perú 🇵🇪</span>
+  <div class="footer-status">
+    <span class="status-dot"></span>
+    <span>Disponible para proyectos</span>
+  </div>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

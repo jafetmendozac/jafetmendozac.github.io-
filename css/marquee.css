@@ -1,0 +1,14 @@
+.marquee-wrap {
+  overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  padding: 1rem 0; background: var(--ink);
+}
+.marquee-track { display: flex; gap: 3.5rem; width: max-content; animation: scrollx 20s linear infinite; }
+.marquee-wrap:hover .marquee-track { animation-play-state: paused; }
+@keyframes scrollx { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+.marquee-item {
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: .9rem;
+  color: rgba(244,246,249,.15); letter-spacing: .07em; text-transform: uppercase;
+  white-space: nowrap; display: flex; align-items: center; gap: 3.5rem; transition: color .2s;
+}
+.marquee-item:hover { color: rgba(244,246,249,.45); }
+.mdot { display: inline-block; width: 6px; height: 6px; background: var(--blue); border-radius: 50%; flex-shrink: 0; }
